@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(e){
     getJSONData(CARS).then(function(resultObj){
         if(resultObj.status === "ok"){
-            carsList = resultObj.data.products;
+            productsList = resultObj.data.products;
         }
         showProductsList(productsArray);
     })
